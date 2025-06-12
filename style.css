@@ -48,7 +48,7 @@ main {
   cursor: pointer;
 }
 .card button:hover {
-  background-color: #003366;
+  background-color:#e5340e;
 }
 /* Contact Form */
 #contact-form {
@@ -94,7 +94,7 @@ main {
   cursor: pointer;
 }
 #contact-form button:hover {
-  background-color: #003366;
+  background-color: #e5340e;
 }
 .error {
   color: red;
