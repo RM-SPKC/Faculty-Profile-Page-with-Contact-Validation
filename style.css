@@ -40,7 +40,7 @@ main {
 }
 .card button {
   margin-top: 1rem;
-  padding:1.5rem 0.75rem;
+  padding:0.75rem 2rem;
   background-color:#e5340e;
   color: white; 
   border: none;
