@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faculty Team - Department of XYZ</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Faculty Team - Department of XYZ</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. John Doe" />
+      <h3>Dr. John Doe</h3>
+      <p>Computer Science Department</p>
+      <p>Expert in Artificial Intelligence and Machine Learning.</p>
+      <button onclick="scrollToContact()">Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Jane Smith" />
+      <h3>Dr. Jane Smith</h3>
+      <p>Mathematics Department</p>
+      <p>Specializes in Applied Mathematics and Statistics.</p>
+      <button onclick="scrollToContact()">Contact</button>
+    </div>
+
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Dr. Alan Brown" />
+      <h3>Dr. Alan Brown</h3>
+      <p>Physics Department</p>
+      <p>Focus on Quantum Mechanics and Theoretical Physics.</p>
+      <button onclick="scrollToContact()">Contact</button>
+    </div>
+  </main>
+
+  <section id="contact-form">
+    <h2>Contact Faculty</h2>
+    <form id="form" onsubmit="return validateContactForm()">
+      <label for="fullName">Full Name *</label>
+      <input type="text" id="fullName" name="fullName" required />
+      <div id="nameError" class="error"></div>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required />
+      <div id="emailError" class="error"></div>
+
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" required></textarea>
+      <div id="messageError" class="error"></div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>
